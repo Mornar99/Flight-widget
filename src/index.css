@@ -1,13 +1,80 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+/*import fonta sa google fonts, *=za sve*/
+*{
+    color: white;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 25px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: darkorange;
+}
+
+.departures{
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.departures table{
+    background-color: rgb(58, 56, 56);
+    text-align: left;
+    min-width: 800px;
+}
+
+th{
+    padding-left: 2px;
+}
+
+#empty{
+    width: 45px;
+}
+
+#time{
+    width: 100px;
+}
+
+#destination{
+    width: 200px;
+}
+
+#flight{
+    width: 160px;
+}
+
+#gate{
+    width: 80px;
+}
+
+#remarks{
+    width: 110px;
+}
+
+#letters-container{
+    display: flex;
+}
+
+#letter{
+    border: solid 2px rgb(43, 41, 41);
+    background-color: black;
+}
+
+.flip{
+    animation: 0.5s linear flipping;
+}
+
+@keyframes flipping{
+    0%{
+        transform: rotateX(0deg);
+    }
+    50%{
+        transform: rotateX(90deg);
+    }
+    100%{
+        transform: rotateX(0deg);
+    }
 }
