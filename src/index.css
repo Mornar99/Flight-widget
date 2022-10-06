@@ -78,3 +78,19 @@ th{
         transform: rotateX(0deg);
     }
 }
+
+.search{
+    margin-bottom: 10px;
+}
+
+.search-bar{
+    height: 1.5em;
+    width: 98%;
+    padding-left: 0.5em;
+    outline: none;
+    border: none;
+    font-family: inherit;
+    font-size: 100%;
+    color: black;
+    border-radius: 3em;
+}

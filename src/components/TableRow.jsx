@@ -1,7 +1,7 @@
 import TableCell from './TableCell'
 
 const TableRow = ({ flight }) => {
-    console.log(flight)
+    //console.log(flight)
     const words = Object.values(flight)//iz objekta samo vrijednosti u niz povadi
     //console.log(words)
 
